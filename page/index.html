@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html class="one-page-layout js flexbox canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths modern-layout" data-classic-layout="false" data-mobile-classic-layout="false" data-next-animation="15" data-prev-animation="16" data-random-animation="false" lang="en-US">
+<head>
+    <!--meta http-equiv="refresh" content="0; url=" /-->
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="../files/css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+	</style>
+	<style type="text/css">
+	@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}
+	</style>
+	<style type="text/css">
+	.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}
+	</style>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Ashley Shaun Bradley | Game & Web Developer</title>
+	<link href="http://themes.pixelwars.org/empathy/feed/" rel="alternate" title="Empathy » Feed" type="application/rss+xml">
+	<link href="http://themes.pixelwars.org/empathy/comments/feed/" rel="alternate" title="Empathy » Comments Feed" type="application/rss+xml">
+<!-- <script type="text/javascript">
+			   window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/themes.pixelwars.org\/empathy\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			   !function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+	</script> -->
+	<script src="../files/wp-emoji-release.min.js" type="text/javascript">
+	</script>
+	<style type="text/css">
+	img.wp-smiley,
+	img.emoji {
+	   display: inline !important;
+	   border: none !important;
+	   box-shadow: none !important;
+	   height: 1em !important;
+	   width: 1em !important;
+	   margin: 0 .07em !important;
+	   vertical-align: -0.1em !important;
+	   background: none !important;
+	   padding: 0 !important;
+	}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<!--link href="../files/css(1)" id="montserrat-css" media="all" rel="stylesheet" type="text/css">
+	<link href="../files/css(2)" id="roboto-css" media="all" rel="stylesheet" type="text/css"-->
+	<link href="../files/bootstrap.min.css" id="bootstrap-css" media="all" rel="stylesheet" type="text/css">
+	<link href="../files/pe-icon-7-stroke.css" id="pe-icon-7-stroke-css" media="all" rel="stylesheet" type="text/css">
+	<!--link href="../files/fontello.css" id="fontello-css" media="all" rel="stylesheet" type="text/css"-->
+	<link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="../files/nprogress.css" id="nprogress-css" media="all" rel="stylesheet" type="text/css">
+	<link href="../files/magnific-popup.css" id="magnific-popup-css" media="all" rel="stylesheet" type="text/css">
+	<link href="../files/uniform.default.css" id="uniform-css" media="all" rel="stylesheet" type="text/css">
+	<link href="../files/animations.css" id="animations-css" media="all" rel="stylesheet" type="text/css">
+	<link href="../files/main.css" id="main-css" media="all" rel="stylesheet" type="text/css">
+	<link href="../files/768.css" id="768-css" media="all" rel="stylesheet" type="text/css">
+	<link href="../files/wp-fix.css" id="wp-fix-css" media="all" rel="stylesheet" type="text/css">
+	<link href="../files/style.css" id="theme-style-css" media="all" rel="stylesheet" type="text/css">
+	<link href="../owl/owl.carousel.css" media="all" rel="stylesheet" type="text/css">
+	<script src="../files/jquery.js" type="text/javascript"></script>
+	<script src="../files/jquery-migrate.min.js" type="text/javascript"></script>
+	<script src="../files/modernizr.min.js" type="text/javascript"></script>
+	<!--script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="https://socialcounters.000webhostapp.com/SocialCounters/SocialCounters/js/api.js"></script>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<script src="../owl/owl.carousel.js" type="text/javascript"></script>
+	<!--link href="http://themes.pixelwars.org/empathy/wp-json/" rel="https://api.w.org/">
+	<link href="http://themes.pixelwars.org/empathy/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml">
+	<link href="http://themes.pixelwars.org/empathy/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml">
+	<meta content="WordPress 4.4.2" name="generator"-->
+	<!--link href="http://themes.pixelwars.org/empathy/" rel="canonical">
+	<link href="http://themes.pixelwars.org/empathy/" rel="shortlink">
+	<link href="http://themes.pixelwars.org/empathy/wp-content/uploads/2015/07/favicon-2.ico" rel="shortcut icon">
+	<link href="http://themes.pixelwars.org/empathy/wp-content/uploads/2015/07/avatar.jpg" rel="apple-touch-icon-precomposed"--><!-- Text Logo Background Color -->
+
+	<!--style type="text/css">
+	@media screen and (min-width: 768px) { .site-title { background: #2ba163; } }
+	</style><!-- Link Color -->
+
+	<style type="text/css">
+	a { color: #009966; }
+	</style><!-- Link Hover Color -->
+
+	<style type="text/css">
+	a:hover { color: #8acb82; }
+	</style><!-- Primary Color -->
+
+	<style type="text/css">
+	/*input[type=submit]:hover, input[type=button]:hover, button:hover, a.button:hover, .event h3, .event h2 + p i, .event h2 + p img, #search-submit, .entry-meta .cat-links a, .pagination a:hover, .navigation a:hover, a.more-link:hover, #nprogress .bar, .section-title h2 i, .event:nth-of-type(4):after { background-color: #8acb82; }
+
+	.bypostauthor > article { border-color: #8acb82; }
+
+	#nprogress .spinner-icon { border-top-color: #8acb82; border-left-color: #8acb82; }
+
+	.event h3:before { border-color: #8acb82; }
+
+	body .mejs-controls .mejs-time-rail .mejs-time-current { background: #8acb82; }*/
+	</style><!-- Ribbon Shadow Color -->
+
+	<!--script>
+	function ColorLuminance( hex, lum )
+	{
+	   // validate hex string
+	   hex = String(hex).replace(/[^0-9a-f]/gi, '');
+
+	   if ( hex.length < 6 )
+	   {
+		   hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+	   }
+
+	   lum = lum || 0;
+
+	   // convert to decimal and change luminosity
+	   var rgb = "#", c, i;
+
+	   for ( i = 0; i < 3; i++ )
+	   {
+		   c = parseInt(hex.substr(i*2,2), 16);
+		   c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+		   rgb += ("00"+c).substr(c.length);
+	   }
+
+	   return rgb;
+	}
+
+	jQuery(document).ready(function($)
+	{
+	   color = ColorLuminance( '#8acb82', -0.15 );
+
+	   var styleCss = '<style type="text/css">' +
+
+						   '.section-title h2:after, .section-title h2:before { background-color: ' + color + '; }' +
+
+					   '<\/style>';
+
+	   $( 'body' ).append( styleCss );
+	});
+	</script--><!-- 1. Page Light Text -->
+
+	<script>
+        jQuery(document).ready(function($)
+        {
+           $( '.one-page-layout .site-main > section:nth-of-type(1)' ).toggleClass( 'light-text' );
+        });
+	</script><!-- 3. Page Background Color -->
+
+	<!--style type="text/css">
+	.one-page-layout .site-main > section:nth-of-type(3) { background-color: #ebf0df; }
+	</style><!-- 6. Page Light Text -->
+
+	<script>
+        jQuery(document).ready(function($)
+        {
+           $( '.one-page-layout .site-main > section:nth-of-type(6)' ).toggleClass( 'light-text' );
+        });
+	</script>
+
+    <!--[if lt IE 9]>
+        <script src="http://themes.pixelwars.org/empathy/wp-content/themes/empathy/js/ie.js"></script>
+    <![endif]-->
+
+
+	<!--script charset="UTF-8" src="../files/QuotaService.RecordEvent" type="text/javascript"></script-->
+</head>
+<body class="home page page-id-185 page-template page-template-template-homepage page-template-template-homepage-php">
+    <script type="text/javascript">
+        //window.location.href = "../#/home"
+        console.log(window.location.href);
+        console.log(window.location.pathname);
+    </script>
+	<div class="hfeed site" id="page">
+		<header class="header" id="masthead" role="banner">
+			<a class="menu-toggle toggle-link"><i class="fa fa-bars"></i></a>
+			<h1 class="site-title mobile-title">Game & Web Developer</h1>
+			<div class="header-wrap">
+				<img alt="Empathy" src="../files/images/avatar.png">
+				<h1 class="site-title">Ashley Bradley</h1>
+				<nav class="site-navigation primary-navigation" id="primary-navigation" role="navigation">
+					<div class="nav-menu">
+						<ul class="menu-auto">
+							<li class="current_page_item">
+								<a href="#"><i class="pe-7s-home"></i> home</a>
+							</li>
+							<li>
+								<a href="#"><i class="pe-7s-user"></i> about me</a>
+							</li>
+							<li>
+								<a href="#"><i class="pe-7s-id"></i> resume</a>
+							</li>
+							<li>
+								<a href="#"><i class="pe-7s-notebook"></i> portfolio</a>
+							</li>
+							<li>
+								<a href="#"><i class="pe-7s-comment"></i> blog</a>
+							</li>
+							<li>
+								<a href="#"><i class="pe-7s-call"></i> contact</a>
+							</li>
+						</ul>
+						<script>
+							jQuery(document).ready(function($)
+							{
+							  var menu_html = "";
+
+							  $('#main').find('section.menu-item').each(function()
+							  {
+								  var id = $(this).attr('id');
+								  var icon = $(this).find('.page-title  i').attr('class');
+								  var title = $(this).find('.page-title').text();
+								  var menu_item = '<li><a href="#/' + id + '"><i class="' + icon + '"><\/i>' + title + '<\/a><\/li>';
+
+								  menu_html += menu_item;
+
+								  $('.menu-auto').html(menu_html);
+							  });
+							});
+						</script>
+					</div>
+				</nav>
+				<div class="header-search">
+					<form action="http://themes.pixelwars.org/empathy/" id="search-form" method="get" name="search-form" role="search">
+						<input id="search" name="s" placeholder="enter word" required="required" type="text"> <input id="search-submit" title="Search" type="submit" value="→">
+					</form>
+				</div>
+				<div class="header-bottom">
+					<div>
+						<ul class="social-intro list-unstyled list-inline">
+						  <li><a href="#" class="icn-facebook"><i class="fa fa-facebook"></i></a></li>
+						  <li><a href="#" class="icn-twitter"><i class="fa fa-twitter"></i></a></li>
+						</ul>
+						<ul class="social-intro list-unstyled list-inline">
+						  <li><a href="#" class="icn-g-plus"><i class="fa fa-google-plus"></i></a></li>
+						  <li><a href="#" class="icn-linkedin"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+					<div class="copy-text">
+						<div class="widget_text" id="text-2">
+							<div class="textwidget">
+								<p>Everyday Co. ©</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="site-main" id="main">
+			<section class="pt-page page-layout home-section has-bg-img light-text page-current menu-item" id="home" style="background-image: url( ../files/images/homepage.jpg );">
+				<div class="content">
+					<div class="layout-medium">
+						<h1 class="page-title" style="display: none;"><i class="pe-7s-home"></i> home</h1>
+						<h2>Ashley Shaun Bradley</h2>
+						<h4>BSc (Hons) Computer Games Technology</h4>
+						<!--h4>I am <strong data-typist="a programmer.,a web devloper.,a game devloper." id="typist-element"> an avid Twitter user.</strong></h4-->
+						<div class="content" style="text-align: left; position: relative; padding: 0;">
+							<div class="my-work">
+								<h4><b>Latest Posts</b></h4>
+								<div class="owl-carousel" id="latest-posts" style="width:1600px; margin-top:20px; opacity:0.7;">
+									<div><img src="../images/BearWithIt.png"></img><a href="#">Bear With It</a></div>
+									<div><img src="../images/FinalYearProject.png"></img><a href="#">Final Year Project</a></div>
+		              <div><img src="../images/Brian.png"></img><a href="#">Global Game Jam 2015</a></div>
+									<div><img src="../images/EverydayGossip2.png"></img><a href="#">EverydayGossip</a></div>
+									<div><img src="../images/EverydayEarnings2.png"></img><a href="#">EverydayEarnings</a></div>
+								</div>
+		            <!--p style="text-align: center;"><a class="button" href="../#/portfolio"><i class="pe-7s-expand1"></i> &nbsp; More Information</a></p-->
+							</div>
+
+							<style>
+								.owl-carousel .owl-item a {
+									font-size: 20px;
+								}
+							</style>
+
+							<div class="my-work-mobile">
+								<h4 style="font-size: 20px; margin-top: 20px !important;"><b>Latest Posts</b></h4>
+								<div class="owl-carousel" id="latest-posts-mobile" style="width:300px; margin-top:5px; opacity:0.7;">
+									<div><img src="../images/BearWithIt.png"></img><a href="#">Bear With It</a></div>
+									<div><img src="../images/FinalYearProject.png"></img><a href="#">Final Year Project</a></div>
+		              <div><img src="../images/Brian.png"></img><a href="#">Global Game Jam 2015</a></div>
+									<div><img src="../images/EverydayGossip2.png"></img><a href="#">EverydayGossip</a></div>
+									<div><img src="../images/EverydayEarnings2.png"></img><a href="#">EverydayEarnings</a></div>
+								</div>
+							</div>
+
+							<!--div style="margin-left: 50px; margin-top: 30px; float:left; clear: left;">
+								<h4>Game Development</h4>
+								<div class="owl-carousel" style="width:400px; margin-top:20px; opacity:0.7;">
+									<div><img src="../images/BearWithIt.png"></img></div>
+									<div><img src="../images/FinalYearProject.png"></img></div>
+		              <div><img src="../images/Brian.png"></img></div>
+								</div>
+							</div-->
+
+              <script>
+                  $(document).ready(function(){ $('#latest-posts').owlCarousel(); });
+
+                  var owl = $('#latest-posts');
+                  owl.owlCarousel({
+                      items:4,
+                      loop:true,
+                      margin:10,
+                      animateOut: 'fadeOut',
+                      autoplay:true,
+                      autoplayTimeout:5000,
+                      autoplayHoverPause:true
+                  });
+
+									$(document).ready(function(){ $('#latest-posts-mobile').owlCarousel(); });
+
+                  var owl = $('#latest-posts-mobile');
+                  owl.owlCarousel({
+                      items:1,
+                      loop:true,
+                      margin:10,
+                      animateOut: 'fadeOut',
+                      autoplay:true,
+                      autoplayTimeout:5000,
+                      autoplayHoverPause:true
+                  });
+              </script>
+						</div>
+						<!--ul class="social-intro list-unstyled list-inline">
+						  <li><a href="#" class="icn-facebook"><i class="fa fa-facebook"></i></a></li>
+						  <li><a href="#" class="icn-twitter"><i class="fa fa-twitter"></i></a></li>
+						  <li><a href="#" class="icn-dribbble"><i class="fa fa-dribbble"></i></a></li>
+						  <li><a href="#" class="icn-g-plus"><i class="fa fa-google-plus"></i></a></li>
+						  <li><a href="#" class="icn-linkedin"><i class="fa fa-linkedin"></i></a></li>
+						  <li><a href="#" class="icn-instagram"><i class="fa fa-instagram"></i></a></li>
+						  <li><a href="#" class="icn-vimeo"><i class="fa fa-vimeo-square"></i></a></li>
+						  <li><a href="#" class="icn-youtube"><i class="fa fa-youtube-play"></i></a></li>
+						  <li><a href="#" class="icn-tumblr"><i class="fa fa-tumblr"></i></a></li>
+						  <li><a href="#" class="icn-github"><i class="fa fa-github-alt"></i></a></li>
+						</ul-->
+					</div>
+				</div>
+			</section>
+			<section class="pt-page page-layout menu-item" id="about-me">
+				<div class="content">
+					<div class="layout-medium">
+						<h1 class="page-title"><i class="pe-7s-user"></i> About Me</h1>
+
+						<div class="row">
+							<div class="col-sm-7">
+								<div class="section-title center">
+									<h2><i>Services</i></h2>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 col-md-3">
+										<div class="service">
+											<p><img alt="icon-01" class="alignnone size-full wp-image-228" height="512" sizes="(max-width: 512px) 100vw, 512px" src="../files/icon-01.png" width="512"></p>
+											<h4>COPYWRITER</h4>
+											<p>I design super cool websites. It is a long established fact that a reader will be distracted by the readable content.</p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="service">
+											<p><img alt="icon-02" class="alignnone size-full wp-image-229" height="512" sizes="(max-width: 512px) 100vw, 512px" src="../files/icon-02.png" width="512"></p>
+											<h4>GAME DEV</h4>
+											<p>I can design beautiful type faces for both digital and print media. It is a long established fact that a reader will be distracted.</p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="service">
+											<p><img alt="icon-03" class="alignnone size-full wp-image-230" height="512" sizes="(max-width: 512px) 100vw, 512px" src="../files/icon-03.png" width="512"></p>
+											<h4>MANAGEMENT</h4>
+											<p>I write about web design. It is a long established fact that a reader will be distracted by the readable content.</p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="service">
+											<p><img alt="icon-04" class="alignnone size-full wp-image-231" height="512" sizes="(max-width: 512px) 100vw, 512px" src="../files/icon-04.png" width="512"></p>
+											<h4>PROBLEM SOLVER</h4>
+											<p>I have strong project management skills. It is a long established fact that a reader will be distracted by the readable content.</p>
+										</div>
+									</div>
+								</div>
+								<div class="section-title center">
+									<h2><i>Work Process</i></h2>
+								</div>
+								<div class="row">
+									<div class="col-sm-2 col-xs-4">
+										<div class="process">
+											<p><i class="pe-7s-chat"></i></p>
+											<h4>DISCOVER</h4>
+										</div>
+									</div>
+									<div class="col-sm-2 col-xs-4">
+										<div class="process">
+											<p><i class="pe-7s-light"></i></p>
+											<h4>IDEA</h4>
+										</div>
+									</div>
+									<div class="col-sm-2 col-xs-4">
+										<div class="process">
+											<p><i class="pe-7s-vector"></i></p>
+											<h4>DESIGN</h4>
+										</div>
+									</div>
+									<div class="col-sm-2 col-xs-4">
+										<div class="process">
+											<p><i class="pe-7s-network"></i></p>
+											<h4>DEVELOP</h4>
+										</div>
+									</div>
+									<div class="col-sm-2 col-xs-4">
+										<div class="process">
+											<p><i class="pe-7s-browser"></i></p>
+											<h4>TEST</h4>
+										</div>
+									</div>
+									<div class="col-sm-2 col-xs-4">
+										<div class="process">
+											<p><i class="pe-7s-rocket"></i></p>
+											<h4>LAUNCH</h4>
+										</div>
+									</div>
+								</div>
+								<!--div class="section-title center">
+									<h2><i>Clients</i></h2>
+								</div>
+								<div class="row">
+									<div class=" col-xs-4 col-md-2">
+										<div class="client">
+											<a href="http://themes.pixelwars.org/empathy/#"><img alt="client-01" class="alignnone size-full wp-image-234" height="142" src="../files/client-01.png" width="200"></a>
+										</div>
+									</div>
+									<div class=" col-xs-4 col-md-2">
+										<div class="client">
+											<a href="http://themes.pixelwars.org/empathy/#"><img alt="client-02" class="alignnone size-full wp-image-235" height="235" src="../files/client-02.png" width="250"></a>
+										</div>
+									</div>
+									<div class=" col-xs-4 col-md-2">
+										<div class="client">
+											<a href="http://themes.pixelwars.org/empathy/#"><img alt="client-03" class="alignnone size-full wp-image-236" height="172" src="../files/client-03.png" width="250"></a>
+										</div>
+									</div>
+									<div class=" col-xs-4 col-md-2">
+										<div class="client">
+											<a href="http://themes.pixelwars.org/empathy/#"><img alt="client-04" class="alignnone size-full wp-image-237" height="91" src="../files/client-04.png" width="173"></a>
+										</div>
+									</div>
+									<div class=" col-xs-4 col-md-2">
+										<div class="client">
+											<a href="http://themes.pixelwars.org/empathy/#"><img alt="client-05" class="alignnone size-full wp-image-238" height="161" src="../files/client-05.png" width="250"></a>
+										</div>
+									</div>
+									<div class=" col-xs-4 col-md-2">
+										<div class="client">
+											<a href="http://themes.pixelwars.org/empathy/#"><img alt="client-06" class="alignnone size-full wp-image-239" height="223" src="../files/client-06.png" width="250"></a>
+										</div>
+									</div>
+								</div>
+								<div class="section-title center">
+									<h2><i>Fun Fact</i></h2>
+								</div>
+								<div class="row">
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-map-2"></i></p>
+											<h4>24 Countries Visited</h4>
+										</div>
+									</div>
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-news-paper"></i></p>
+											<h4>72 Articles Published</h4>
+										</div>
+									</div>
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-coffee"></i></p>
+											<h4>20.000 Cups Of Coffee</h4>
+										</div>
+									</div>
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-medal"></i></p>
+											<h4>12 Awards Won</h4>
+										</div>
+									</div>
+								</div>
+								<div class="section-title center">
+									<h2><i>Other Pages</i></h2>
+								</div>
+								<p class="center">
+									<a class="button" href="http://themes.pixelwars.org/empathy/404/">404</a>
+									<a class="button" href="http://themes.pixelwars.org/empathy/blog/">Blog</a>
+									<a class="button" href="http://themes.pixelwars.org/empathy/form-elements/">Form Elements</a>
+									<a class="button" href="http://themes.pixelwars.org/empathy/grid/">Grid</a>
+									<a class="button" href="http://themes.pixelwars.org/empathy/shortcodes/">Shortcodes</a>
+									<a class="button" href="http://themes.pixelwars.org/empathy/typography/">Typography</a>
+								</p-->
+							</div>
+
+							<div class="col-sm-5" style="float: right;">
+								<div class="card-container">
+								  <header>
+								    <div class="bio">
+								      <img src="https://pbs.twimg.com/profile_banners/83661888/1483361506/1500x500" alt="background" class="bg">
+								      <div class="desc">
+								        <h3>@GrievingDoctor</h3>
+								        <p>Last of the Time Lords | #DoctorWho</p>
+								        <p><i class="fa fa-map-marker" aria-hidden="false"></i> Into Darkness</p>
+								      </div>
+								    </div>
+
+								    <div class="avatarcontainer">
+								      <img src="https://pbs.twimg.com/profile_images/877080424211763200/V_BNl4R3_400x400.jpg" alt="avatar" class="avatar">
+								    </div>
+
+								    <div class="followcontainer">
+								      <div class="follow"><i class="fa fa-twitter" aria-hidden="false"></i> Follow</div>
+								    </div>
+								  </header>
+
+								  <div id="wrapper" class="profile-content">
+								    <div class="data">
+								      <ul>
+								        <li>
+								          <a href="">Grieving Time Lord</a>
+								          <span>@GrievingDoctor</span>
+								        </li>
+								        <li>
+								          <a class="item twitter"><span class="count"></span></a>
+								          <span>Followers</span>
+								        </li>
+								      </ul>
+								    </div>
+								  </div>
+								</div>
+
+								<div class="tw-feed">
+								  <a class="twitter-timeline" href="https://twitter.com/grievingdoctor"
+								     data-theme="light"
+								     data-link-color="#334455"
+								     border-radius="none"
+								     data-chrome="noheader nofooter noborders noscrollbar transparent"
+								     data-widget-id="413723523169787904"
+								     data-screen-name="grievingdoctor" data-show-replies="false"
+								     width="100%"
+										 height="460"
+								  >Tweets by GrievingDoctor</a>
+								</div>
+
+								<script>
+									$('#wrapper').SocialCounter({
+										twitter_user: 'grievingdoctor'
+									});
+
+									$(document).ready(
+										function iniciar() {
+											$('.follow').on("click", function() {
+												$('.follow').css('background-color', '#34CF7A');
+												$('.follow').html('<div class="icon-ok"></div> Following');
+											});
+										}
+									);
+
+									window.twttr = (function(d, s, id) {
+									  var js, fjs = d.getElementsByTagName(s)[0],
+									    t = window.twttr || {};
+									  if (d.getElementById(id)) return;
+									  js = d.createElement(s);
+									  js.id = id;
+									  js.src = "https://platform.twitter.com/widgets.js";
+									  fjs.parentNode.insertBefore(js, fjs);
+
+									  t._e = [];
+									  t.ready = function(f) {
+									    t._e.push(f);
+									  };
+
+									  return t;
+									}(document, "script", "twitter-wjs"));
+
+									twttr.ready(function(twttr) {
+									  twttr.events.bind("rendered", function(event) {
+									    var widgetIframe = event.target;
+									    if (widgetIframe.parentNode.className != "tw-feed") {
+									      return;
+									    }
+
+									    var style = widgetIframe.contentDocument.createElement("style");
+									    style.innerHTML = "div.timeline-Tweet--isRetweet { display: none}";
+
+									    widgetIframe.contentDocument.head.appendChild(style);
+									  });
+									});
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="pt-page page-layout menu-item" id="resume">
+				<div class="content">
+					<div class="layout-medium">
+						<h1 class="page-title"><i class="pe-7s-id"></i> Resume</h1>
+						<div class="row">
+							<div class="col-sm-7">
+
+								<div class="event">
+									<h2>Education</h2>
+									<p><i class="pe-7s-study"></i></p>
+								</div>
+
+								<div class="event">
+									<h3>2014 - 2017</h3>
+									<h5>Birmingham City University</h5>
+									<h4>BSc (Hons) Computer Games Technology</h4>
+									<h4 class="sub-heading">Awarded Second Class: Division I achieved September 2017</h4>
+									<p>Modules included: </p>
+									<div>
+										<ul class="modules">
+											<li>Open Systems</li>
+											<li>Computer Games Technology</li>
+											<li>Computer Networks and Distribution</li>
+											<li>C++ Programming for Games Engines</li>
+											<li>Programming Games Engines</li>
+											<li>3D Game World Development</li>
+										</ul>
+										<ul class="modules">
+											<li>Mobile and Web Technology</li>
+											<li>Game Console Programming</li>
+											<li>Artificial Intelligence & Machine Learning</li>
+											<li>Game Graphics Programming</li>
+											<li>Artificial Intelligence for Games</li>
+											<li>Individual Final Year Project</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="event" id="education">
+									<h3>2012 - 2014</h3>
+									<h5>Birmingham Metropolitan College</h5>
+									<h4>BTEC Level 3 Extended Diploma, Software Development</h4>
+									<h4 class="sub-heading">Awarded triple grade Distinction, Distinction, Merit achieved July 2014</h4>
+									<p>Modules included:</p>
+									<div>
+										<ul class="modules">
+											<li>Website Production</li>
+											<li>Web Server Scripting</li>
+											<li>Client Side Customisation of Web Pages</li>
+											<li>Developing Computer Games</li>
+											<li>Communication and Employability Skills for IT</li>
+											<li>Event Driven Programming</li>
+											<li>Procedural Programming</li>
+											<li>Object Oriented Programming</li>
+											<li>Controlling Systems Using IT</li>
+										</ul>
+										<ul class="modules">
+											<li>Database Design</li>
+											<li>Human Computer Interaction</li>
+											<li>Spreadsheet Modelling</li>
+											<li>Information Systems</li>
+											<li>Organisational Systems Security</li>
+											<li>Communications Technologies</li>
+											<li>Computer Systems</li>
+											<li>Software Design and Development</li>
+											<li>Systems Analysis and Design</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="event">
+									<h3>2012</h3>
+									<h5>Plantsbrook School</h5>
+									<h4>GCSEs</h4>
+									<h4 class="sub-heading">10 Passes, Grade C and above.</h4></br>
+									<h4>OCR Level 2</h4>
+									<h4 class="sub-heading">Awarded Merit</h4>
+									<p>Modules included:</p>
+									<div>
+										<ul class="modules">
+											<li>Webpage Creation</li>
+											<li>Creating animation for WWW using ICT</li>
+											<li>Design and Produce Multimedia Projects</li>
+										</ul>
+										<ul class="modules">
+											<li>ICT Skills for Business</li>
+											<li>Creating Computer Graphics</li>
+											<li>Creating Video</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="event">
+									<h2>Experience</h2>
+									<p><i class="pe-7s-ribbon"></i></p>
+								</div>
+
+								<div class="event">
+									<h3>2015 – 2016</h3>
+									<h5>Everyday Co.</h5>
+									<h4>EverydayEarnings | PHP Developer</h4>
+									<h4 class="sub-heading">Self-employment as a PHP Developer and co-creator of an Affiliate Network.</h4>
+									<!--p>After running EverydayGossip.org for over 5 months, EverydayEarnings began development after the idea of expanding became reality.
+									I partnered up with a friend from college who also had a large audience across multiple social media accounts and set up an affiliate network called EverydayEarnings.<br><br>
+									EverydayEarnings allowed anyone to apply and become an affiate, once accepted this allowed them to start making money by advertising our website called EverydayGossip.
+									Once the affiate network became established we began contacting the owners of other social media accounts to join EverydayEarnings.</p-->
+									<p>•	Developed an Analytics Dashboard using PHP which displayed advert Clicks, Page Views, Cost per Click and User Earnings. As well as dynamically displaying each article created on EverydayGossip for affiliates to advertise.</p>
+									<p>•	Use of Google AdSense Management API which fetched data via JSON files for each affiliate to monitor their analytics, as well as OAuth 2.0 authentication implementation.</p>
+									<p>•	Use of SQL databases to manage the affiliates user account details and login credentials.</p>
+								</div>
+
+								<div class="event">
+									<h3>2014</h3>
+									<h5>Everyday Co.</h5>
+									<h4>EverydayGossip.net | Web Designer & Developer</h4>
+									<h4 class="sub-heading">Self-employment as a Web Designer & Developer, creating a website using HTML, CSS & JavaScript which generated a monthly income from the adverts provided by Google AdSense.</h4>
+									<!--p>In December 2014, I developed my own website and I applied to join Google AdSense in order to start monetising the content which I created for my website.
+									I used my personal social media accounts to advertise the content which directed a lot of traffic to the site which resulted in the website generating a lot of advertising revenue.</p-->
+									<p>•	Developed my own HTML responsive website from scratch over 3 weeks until the initial launch. This was a visually appealing digital media website which attracted traffic from the articles created for the website.</p>
+									<p>•	Use of JavaScript & jQuery AJAX implementation to dynamically update the homepage and article content rather than hard-coding each element of the webpage.</p>
+								</div>
+
+								<!--div class="event">
+									<h3>2006</h3>
+									<h4>Computer Science</h4>
+									<h5>MIT</h5>
+									<p>I studied Computer Science at MIT. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.</p>
+								</div-->
+							</div>
+							<div class="col-sm-5">
+								<style>
+									.LI-badge-container.horizontal.light {
+										width: 100%!important;
+										/*box-shadow: 0 0 2px rgba(51, 68, 85, .99)!important;*/
+										margin-bottom: 0px;
+									}
+								</style>
+								<div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ashhhbradley"><a class="LI-simple-link" href='https://uk.linkedin.com/in/ashhhbradley?trk=profile-badge'></a></div>
+								<p style="text-align: center;"><a class="button" href=""><i class="pe-7s-download"></i>Download CV &nbsp; [.PDF]</a></p>
+								<div class="section-title center">
+									<h2><i>Technical Skills</i></h2>
+								</div>
+								<div class="skill-unit">
+                  <h4>Programming Languages:</h4>
+									<h4 class="checklist"><i class="pe-7s-check"></i> C#</h4>
+									<h4 class="checklist"><i class="pe-7s-check"></i> C++</h4>
+									<h4 class="checklist"><i class="pe-7s-check"></i> Swift 3.0</h4>
+                </div>
+                <div class="skill-unit">
+                  <h4>Web Based Languages:</h4>
+									<h4 class="checklist"><i class="pe-7s-check"></i> HTML</h4>
+									<h4 class="checklist"><i class="pe-7s-check"></i> CSS</h4>
+									<h4 class="checklist"><i class="pe-7s-check"></i> PHP</h4>
+									<h4 class="checklist"><i class="pe-7s-check"></i> JavaScript</h4>
+                </div>
+									<!--div class="bar" data-percent="80">
+										<div class="progress" style="width: 80%;">
+											<span>80</span>
+										</div>
+									</div>
+								</div>
+								<div class="skill-unit">
+									<h4>C++</h4>
+									<div class="bar" data-percent="80">
+										<div class="progress" style="width: 80%;">
+											<span>80</span>
+										</div>
+									</div>
+								</div>
+								<div class="skill-unit">
+									<h4>HTML</h4>
+									<div class="bar" data-percent="100">
+										<div class="progress" style="width: 100%;">
+											<span>100</span>
+										</div>
+									</div>
+								</div>
+								<div class="skill-unit">
+									<h4>PHP</h4>
+									<div class="bar" data-percent="80">
+										<div class="progress" style="width: 80%;">
+											<span>80</span>
+										</div>
+									</div>
+								</div>
+								<div class="skill-unit">
+									<h4>JavaScript</h4>
+									<div class="bar" data-percent="60">
+										<div class="progress" style="width: 60%;">
+											<span>60</span>
+										</div>
+									</div>
+								</div-->
+								<div class="section-title center">
+									<h2><i>Design Skills</i></h2>
+								</div>
+								<div class="skill-unit">
+									<h4>Photoshop</h4>
+									<div class="bar" data-percent="90">
+										<div class="progress" style="width: 90%;">
+											<span>90</span>
+										</div>
+									</div>
+								</div>
+								<div class="skill-unit">
+									<h4>Cinema 4D</h4>
+									<div class="bar" data-percent="70">
+										<div class="progress" style="width: 70%;">
+											<span>70</span>
+										</div>
+									</div>
+								</div>
+								<div class="skill-unit">
+									<h4>Blender</h4>
+									<div class="bar" data-percent="50">
+										<div class="progress" style="width: 50%;">
+											<span>50</span>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="section-title center">
+									<h2><i>TESTIMONIALS</i></h2>
+								</div>
+								<div class="testo">
+									<p><img alt="testo-01" class="alignnone size-full wp-image-263" height="128" src="../files/testo-01.jpg" width="128"></p>
+									<h4>Vincent Wood</h4>
+									<h5>CEO / Gravity Inc.</h5>
+									<p>He is a great and hardworking guy. I am so proud of i have him as my asistant. He helped me so much. Also i am so proud of i have him as my asistant. He helped me so much.</p>
+								</div>
+								<div class="testo">
+									<p><img alt="testo-02" class="alignnone size-full wp-image-264" height="128" src="../files/testo-02.jpg" width="128"></p>
+									<h4>Gary Morgan</h4>
+									<h5>Chemist / Freelancer</h5>
+									<p>He was a great co-worker and a friend. I would’t be where i am without his support.</p>
+								</div>
+								<div class="testo">
+									<p><img alt="testo-03" class="alignnone size-full wp-image-265" height="128" src="../files/testo-03.jpg" width="128"></p>
+									<h4>Jason Wilson</h4>
+									<h5>Lab Geek / Miami Metro</h5>
+									<p>He is ok. I don’t really know him. He looks nice.</p>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="pt-page page-layout portfolio menu-item" id="portfolio">
+				<div class="content">
+					<div class="layout-medium" style="max-width:1220px;">
+						<h1 class="page-title"><i class="pe-7s-notebook"></i> Portfolio</h1>
+						<ul class="filters" id="filters">
+							<li class="current">
+								<a data-filter="*" href="#">All</a>
+							</li>
+							<li>
+								<a data-filter=".game" href="#">Game Development</a>
+							</li>
+							<li>
+								<a data-filter=".web" href="#">Web Development</a>
+							</li>
+							<li>
+								<a data-filter=".anim" href="#">Animation</a>
+							</li>
+						</ul>
+						<div class="portfolio-items media-grid masonry" data-item-width="440" data-layout="masonry" style="position: relative; height: 1092px;">
+							<div class="media-cell hentry web post-310 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-310">
+                                <!--script>debugger</script-->
+								<div class="media-box html5">
+									<img alt="01" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="../images/EverydayGossip2.png" width="500">
+									<div class="mask"></div><a class="ajax" href="everydaygossip/"></a>
+								</div>
+								<div class="media-cell-desc">
+									<h3>EverydayGossip</h3>
+									<p class="category">An Article Content Website</p>
+								</div>
+							</div>
+							<div class="media-cell hentry web post-413 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-web" id="post-413">
+								<div class="media-box html5">
+									<img alt="09" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="../images/EverydayEarnings2.png" width="500">
+									<div class="mask"></div><a class="ajax" href="everydayearnings/"></a>
+								</div>
+								<div class="media-cell-desc">
+									<h3>EverydayEarnings</h3>
+									<p class="category">An Affiliate Dashboard</p>
+								</div>
+							</div>
+              <div class="media-cell hentry game post-422 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-422">
+								<div class="media-box">
+									<img alt="05" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="../images/FinalYearProject.png" width="500">
+									<div class="mask"></div><a class="ajax" href="brian/"></a>
+								</div>
+								<div class="media-cell-desc">
+									<h3>Interaction & Cooperation: Multiplayer Gaming</h3>
+									<p class="category">Final Year Project</p>
+								</div>
+							</div>
+							<div class="media-cell hentry game post-417 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-417">
+								<div class="media-box">
+									<img alt="05" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="../images/BearWithIt.png" width="500">
+									<div class="mask"></div><a class="ajax" href="page-1"></a>
+								</div>
+								<div class="media-cell-desc">
+									<h3>Bear With It</h3>
+									<p class="category">Imagine Cup 2016 Entry</p>
+								</div>
+							</div>
+							<div class="media-cell hentry game post-422 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-422">
+								<div class="media-box">
+									<img alt="05" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="../images/Brian.png" width="500">
+									<div class="mask"></div><a class="ajax" href="brian/"></a>
+								</div>
+								<div class="media-cell-desc">
+									<h3>Brian</h3>
+									<p class="category">Global Game Jam 2015 Entry</p>
+								</div>
+							</div>
+
+							<!-- <style>
+									.card-container {
+									width: 550px;
+									margin: 3em auto 1em auto;
+									-webkit-border-radius: 8px;
+									-moz-border-radius: 8px;
+									-ms-border-radius: 8px;
+									-o-border-radius: 8px;
+									border-radius: 8px;
+									padding-bottom: 1.5em;
+									background-color: #fff;
+									-webkit-box-shadow: #bdc3c7 0 5px 5px;
+									-moz-box-shadow: #bdc3c7 0 5px 5px;
+									box-shadow: #bdc3c7 0 5px 5px;
+									}
+
+									.card-container header {
+									display: block;
+									overflow: hidden;
+									position: relative;
+									padding-bottom: 0em;
+									max-height: 250px;
+									-moz-border-radius-topleft: 8px;
+									-webkit-border-top-left-radius: 8px;
+									border-top-left-radius: 8px;
+									-moz-border-radius-topright: 8px;
+									-webkit-border-top-right-radius: 8px;
+									border-top-right-radius: 8px;
+									}
+
+									.portfolio-card .bg {
+									width: 100%;
+									max-height: 250px;
+									}
+
+									.bio:hover > .desc {
+									cursor: pointer;
+									opacity: 1;
+									}
+
+									.followcontainer {
+									position: relative;
+									float: right;
+									margin-right: 30px;
+									display: block;
+									}
+
+									.followcontainer:hover > .hover {
+									opacity: 1;
+									}
+
+									.portfolio-category {
+									position: absolute;
+									//bottom: 0;
+									//margin-left: 30px;
+									width: 10%;
+									height: 170px;
+									display: block;
+									}
+
+									.portfolio-category:hover > .hover {
+									opacity: 1;
+									}
+
+									.portfolio-category p {
+									width: 160px;
+									height: 35px;
+									font-family: 'Montserrat';
+									font-size: .8em;
+									padding: 8px;
+									text-align: center;
+									//border-right: 3px solid #ecf0f1;
+									//border-bottom: 3px solid #ecf0f1;
+									border-bottom-right-radius: 8px;
+									margin: 0;
+									background-color: #7d6ea0;
+									color: #fff;
+									overflow: hidden;
+									position: relative;
+									}
+
+									.avatar img {
+									width: 65px;
+									height: 65px;
+									}
+
+									.avatar:hover + .hover {
+									opacity: 1;
+									cursor: pointer;
+									}
+
+									.hover {
+									position: absolute;
+									cursor: pointer;
+									width: 100%;
+									height: 100%;
+									background-color: #3498db;
+									top: 0;
+									font-size: 1.8em;
+									text-align: center;
+									color: white;
+									padding-top: 18%;
+									opacity: 0;
+									font-family: 'FontAwesome';
+									font-weight: 300;
+									border: 8px solid #fff;
+									-webkit-border-radius: 50%;
+									-moz-border-radius: 50%;
+									-ms-border-radius: 50%;
+									-o-border-radius: 50%;
+									border-radius: 50%;
+									-webkit-transition-property: all;
+									-moz-transition-property: all;
+									-o-transition-property: all;
+									transition-property: all;
+									-webkit-transition-duration: 0.5s;
+									-moz-transition-duration: 0.5s;
+									-o-transition-duration: 0.5s;
+									transition-duration: 0.5s;
+									-webkit-transition-timing-function: ease;
+									-moz-transition-timing-function: ease;
+									-o-transition-timing-function: ease;
+									transition-timing-function: ease;
+									}
+
+									.data {
+									margin-top: 1em;
+									color: #333;
+									}
+
+									.data li {
+									width: auto;
+									padding: 0px 15px;
+									text-align: center;
+									display: inline-block;
+									font-size: 1.2em;
+									font-family: 'Montserrat', 'Lato', Arial;
+									border-right: solid 1px #444;
+									}
+
+									.data li a {
+									text-decoration: none;
+									color: #333;
+									}
+
+									.data li a span {
+									margin-top: 0px;
+									font-size: 1em;
+									font-family: 'Montserrat', 'Lato', Arial;
+									}
+
+									.data li:last-child {
+									border: none;
+									}
+
+									.data li span {
+									display: block;
+									text-transform: uppercase;
+									font-family: 'Montserrat', 'Quicksand', Arial;
+									font-size: .5em;
+									margin-top: .6em;
+									font-weight: 700;
+									}
+
+									.data ul {
+									padding-left: 15px;
+									margin: 0;
+									}
+
+									.portfolio-card .desc {
+									position: absolute;
+									top: 0;
+									background-color: rgba(51, 71, 93, 0.6);
+									width: 100%;
+									height: 100%;
+									padding: 1.2em 1em 0 230px;
+									color: white;
+									text-align: center;
+									opacity: 0;
+									-webkit-transition-property: all;
+									-moz-transition-property: all;
+									-o-transition-property: all;
+									transition-property: all;
+									-webkit-transition-duration: 0.3s;
+									-moz-transition-duration: 0.3s;
+									-o-transition-duration: 0.3s;
+									transition-duration: 0.3s;
+									-webkit-transition-timing-function: ease-in;
+									-moz-transition-timing-function: ease-in;
+									-o-transition-timing-function: ease-in;
+									transition-timing-function: ease-in;
+									}
+
+									.desc h3 {
+									font-family: 'Montserrat', 'Lato', Arial;
+									font-size: 1.2em;
+									margin-bottom: .5em;
+									}
+
+									.desc p {
+									font-size: .9em;
+									font-family: 'Montserrat', 'Quicksand', Arial;
+									line-height: 1.5em;
+									}
+
+									.follow {
+									background-color: #E08A32;
+									width: 150px;
+									color: white;
+									font-family: 'Montserrat', 'Lato', Arial;
+									text-align: center;
+									padding: .5em;
+									-webkit-border-radius: 100px;
+									-moz-border-radius: 100px;
+									-ms-border-radius: 100px;
+									-o-border-radius: 100px;
+									border-radius: 100px;
+									-webkit-transition-property: all;
+									-moz-transition-property: all;
+									-o-transition-property: all;
+									transition-property: all;
+									-webkit-transition-duration: 0.3s;
+									-moz-transition-duration: 0.3s;
+									-o-transition-duration: 0.3s;
+									transition-duration: 0.3s;
+									-webkit-transition-timing-function: ease;
+									-moz-transition-timing-function: ease;
+									-o-transition-timing-function: ease;
+									transition-timing-function: ease;
+									}
+
+									.follow:hover {
+									background-color: #D96D00;
+									cursor: pointer;
+									}
+							</style> -->
+							<div class="media-cell hentry game post-422 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-423">
+								<div id="wrapper" class="card-container portfolio-card">
+								  <header>
+								    <div class="portfolio-card-category">
+								      <p>Game Development</p>
+								    </div>
+
+								    <div class="bio">
+								      <img src="../images/BearWithIt2.png" alt="background" class="bg">
+								      <div class="desc">
+								        <h3>Bear With It</h3>
+								        <p>Unreal Engine 4</p>
+								        <p>C++ / Blueprint</p>
+								      </div>
+								    </div>
+								  </header>
+
+							    <div class="data">
+							      <ul>
+							        <li class="card-title">
+							          <a href="">Bear With It</a>
+							          <span>Imagine Cup 2016 Entry</span>
+							        </li>
+							        <li class="card-link">
+							          <a class="item twitter"><i class="pe-7s-cloud-download"></i></a>
+							          <span>Download</span>
+							        </li>
+							      </ul>
+							    </div>
+
+								</div>
+							</div>
+							<!--div class="media-cell hentry game video post-420 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-420" style="position: absolute; left: 346px; top: 364px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="03" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="../files/032-500x375.jpg" width="500">
+									<div class="mask"></div><a class="lightbox mfp-iframe" href="https://vimeo.com/97102654" title="Crunch Light"></a>
+								</div>
+								<div class="media-cell-desc">
+									<h3>Crunch Light</h3>
+									<p class="category">lightbox video</p>
+								</div>
+							</div>
+							<div class="media-cell hentry game image post-427 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-427" style="position: absolute; left: 692px; top: 364px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="08" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="../files/08-500x375.jpg" width="500">
+									<div class="mask"></div><a class="lightbox" href="http://themes.pixelwars.org/empathy/wp-content/uploads/2015/07/lightbox-011.jpg" title="the artist"></a><a class="lightbox" href="http://themes.pixelwars.org/empathy/wp-content/uploads/2015/07/lightbox-02.jpg" title="blurry blush"></a><a class="lightbox" href="http://themes.pixelwars.org/empathy/wp-content/uploads/2015/07/lightbox-03.jpg" title="getting dirty"></a>
+								</div>
+								<div class="media-cell-desc">
+									<h3>Sun Bath</h3>
+									<p class="category">Lightbox Gallery</p>
+								</div>
+							</div>
+							<div class="media-cell hentry game image post-424 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-424" style="position: absolute; left: 0px; top: 728px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="07" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="../files/071-500x375.jpg" width="500">
+									<div class="mask"></div><a class="lightbox" href="http://themes.pixelwars.org/empathy/wp-content/uploads/2015/07/lightbox-01.jpg" title="the artist"></a>
+								</div>
+								<div class="media-cell-desc">
+									<h3>Curious Neighbour</h3>
+									<p class="category">lightbox image</p>
+								</div>
+							</div>
+							<div class="media-cell hentry game url post-432 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-432" style="position: absolute; left: 346px; top: 728px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="04" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="../files/042-500x375.jpg" width="500">
+									<div class="mask"></div><a href="http://themeforest.net/user/pixelwars" target="_blank"></a>
+								</div>
+								<div class="media-cell-desc">
+									<h3>Pixelwars</h3>
+									<p class="category">Custom Url</p>
+								</div>
+							</div>
+							<div class="media-cell hentry game post-434 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-434" style="position: absolute; left: 692px; top: 728px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="06" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="../files/061-500x375.jpg" width="500">
+									<div class="mask"></div><a class="ajax" href="http://themes.pixelwars.org/empathy/portfolio/unique-design/"></a>
+								</div>
+								<div class="media-cell-desc">
+									<h3>Unique Design</h3>
+									<p class="category">a creative theme</p>
+								</div>
+							</div-->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="pt-page page-layout" id="page-1">
+				<div class="layout-medium">
+					<article id="post-310" class="hentry post-310 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-design">
+
+						<div class="entry-content">
+							<div>
+								<style>
+									.mini-text p {
+										margin: 0px;
+									}
+								</style>
+
+								<div class="mini-text project-info">
+									<div class="portfolio-nav ">
+										<a class="prev" href="./#/portfolio/everydayearnings/"></a>
+										<a class="back" href="./#/portfolio"></a>
+										<a class="next" href="./#/portfolio/brian/"></a>
+									</div>
+
+									<h1 class="entry-title">Bear With It</h1>
+
+									<p><img class="alignnone wp-image-311 size-full project-image" src="./images/BearWithIt2.png" alt="03" width="1440" height="1080" sizes="(max-width: 1440px) 100vw, 1440px"></p>
+
+									<h5>PROTOTYPE</h5>
+									<p>Basic demonstaration of game mechanics.</br>
+										<a target="_blank" class="button medium" href="#">Download Prototype .exe</a></br>
+										<a target="_blank" class="button medium" href="#">Play Testing Feedback .pdf</a></br>
+									</p></br>
+
+									<h5>FINISHED PROJECT</h5>
+										<p>The completed projected which was entered into the Imagine Cup 2016.</br>
+										<a target="_blank" class="button medium" href="#">Download Game .exe</a></br>
+									</p></br>
+
+									<h5>Platform:</h5>
+									<p>Windows PC</p>
+									<h5>Game Engine:</h5>
+									<p>Unreal Engine 4</p>
+									<h5>Language:</h5>
+									<p>C++ / Blueprint</p>
+									<h5>Duration:</h5>
+									<p>12 Weeks</p>
+									<h5>Team Members:</h5>
+									<p>Ash Bradley</p>
+									<p>Kayleigh Botfield</p>
+									<p>Freddy Nash</p></br>
+								</div>
+
+								<div class="mini-text project-description" id="project-description">
+									<p><img class="alignnone wp-image-311 size-full" src="./images/BearWithIt2.png" alt="03" width="1440" height="1080" sizes="(max-width: 1440px) 100vw, 1440px"></p>
+
+									<h5>ABOUT THE PROJECT</h5>
+									<p>
+										Bear With It is a puzzle/platformer game that was developed in Unreal Engine 4.10 with a 3rd person camera view. It combines the abilities of the three main characters to engage the player to overcome physics and logic puzzles in the level that will have multiple methods to complete for achieving each level’s objective which will be to escape captivity from an unknown entity that has captured all three protagonists.</br></br>
+										You play as three main characters; ZomBear, ZomBunny and Elle, but will only be able to control one of them at a time, a group of lovable zombies that are constantly being kidnapped for experimentation.
+									</p></br>
+
+									<h5>PROJECT GOALS</h5>
+									<p>
+										Design a non violent game based on the concept of cooperation.</br>
+										Demonstrate skills in environment puzzle design, and level pacing.</br>
+										Create a level with simple and fun puzzles to entertain all audiences.</br>
+									</p></br>
+
+									<h5>ROLE</h5>
+									<p>
+										My role in the team included creating and planning the initial game concept, creating blueprints for each of the characters attributes, as well as environment design and puzzle design.
+									</p></br>
+
+									<h5>MADE FOR</h5>
+									<p>Entry to Imagine Cup 2016</p></br>
+
+									<div class="portfolio-nav bottom">
+										<a class="prev" href="./#/portfolio/everydayearnings/"></a>
+										<a class="back" href="./#/portfolio"></a>
+										<a class="next" href="./#/portfolio/brian/"></a>
+									</div></br>
+
+									<div class="my-work" id="latest-posts" style="float: none;">
+										<h4 style="margin: 0;"><b>Latest Posts</b></h4>
+										<div class="owl-carousel" id="portfolio-latest-posts" style="width:1000px; margin-top:10px;">
+											<div><img src="./images/BearWithIt.png"></img><a href="#">Bear With It</a></div>
+											<div><img src="./images/FinalYearProject.png"></img><a href="#">Final Year Project</a></div>
+											<div><img src="./images/Brian.png"></img><a href="#">Global Game Jam 2015</a></div>
+											<div><img src="./images/EverydayGossip2.png"></img><a href="#">EverydayGossip</a></div>
+											<div><img src="./images/EverydayEarnings2.png"></img><a href="#">EverydayEarnings</a></div>
+										</div>
+									</div>
+
+									<style>
+										#portfolio-latest-posts a {
+											color: #345;
+										}
+										#portfolio-latest-posts .owl-item img {
+									    border-radius: 4px;
+										}
+
+										#portfolio-latest-posts .owl-item a {
+										    font-size: 1.1em;
+										}
+									</style>
+
+									<script>
+									$(document).ready(function(){ $('#portfolio-latest-posts').owlCarousel(); });
+
+									var owl = $('#portfolio-latest-posts');
+									owl.owlCarousel({
+											items:4,
+											loop:true,
+											margin:10,
+											animateOut: 'fadeOut',
+											autoplay:true,
+											autoplayTimeout:5000,
+											autoplayHoverPause:true
+									});
+
+									$.ajax({
+									  url: '../files/latest-posts.json',
+									  dataType: 'json',
+									  success: function(data) {
+									    var content = '';
+									    for (i in data.owl) {
+					            	content += data.owl[i].item;
+							        }
+									    owl.trigger('insertContent.owl',content);
+									  }
+									});
+									</script>
+
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="pt-page page-layout" id="page-2">
+			</section>
+			<section class="pt-page page-layout menu-item" id="blog">
+				<div class="content">
+					<div class="layout-medium">
+						<h1 class="page-title"><i class="pe-7s-comment"></i> Blog</h1>
+						<h1 class="entry-title">Something Soon</h1>
+						<!--div class="latest-posts media-grid masonry" data-item-width="340" data-layout="masonry" style="position: relative; height: 1152px;">
+							<article class="media-cell post-378 post type-post status-publish format-standard has-post-thumbnail hentry category-travel tag-love" id="post-378" style="position: absolute; left: 0px; top: 0px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="01" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="331" sizes="(max-width: 500px) 100vw, 500px" src="../files/011-500x331.jpg" width="500">
+									<div class="mask"></div><a href="http://themes.pixelwars.org/empathy/love-is-a-strong-word/"></a>
+								</div>
+								<header class="media-cell-desc">
+									<span class="date" title="2015"><span class="day">24</span> Jul</span>
+									<h3><a href="http://themes.pixelwars.org/empathy/love-is-a-strong-word/">Love is a Strong Word</a></h3>
+								</header>
+							</article>
+							<article class="media-cell post-385 post type-post status-publish format-standard has-post-thumbnail hentry category-think tag-hope" id="post-385" style="position: absolute; left: 346px; top: 0px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="01 (2)" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="334" sizes="(max-width: 500px) 100vw, 500px" src="../files/01-2-500x334.jpg" width="500">
+									<div class="mask"></div><a href="http://themes.pixelwars.org/empathy/there-is-always-light-at-the-end-of-the-tunnel/"></a>
+								</div>
+								<header class="media-cell-desc">
+									<span class="date" title="2015"><span class="day">24</span> Jul</span>
+									<h3><a href="http://themes.pixelwars.org/empathy/there-is-always-light-at-the-end-of-the-tunnel/">There is Always Light at The End of The Tunnel</a></h3>
+								</header>
+							</article>
+							<article class="media-cell post-382 post type-post status-publish format-standard has-post-thumbnail hentry category-sport tag-bike tag-ready" id="post-382" style="position: absolute; left: 692px; top: 0px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="03" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="334" sizes="(max-width: 500px) 100vw, 500px" src="../files/031-500x334.jpg" width="500">
+									<div class="mask"></div><a href="http://themes.pixelwars.org/empathy/get-your-bike-ready-for-the-summer/"></a>
+								</div>
+								<header class="media-cell-desc">
+									<span class="date" title="2015"><span class="day">24</span> Jul</span>
+									<h3><a href="http://themes.pixelwars.org/empathy/get-your-bike-ready-for-the-summer/">Get Your Bike Ready For The Summer</a></h3>
+								</header>
+							</article>
+							<article class="media-cell post-375 post type-post status-publish format-standard has-post-thumbnail hentry category-think" id="post-375" style="position: absolute; left: 0px; top: 337px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="Let&#39;s Hope" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="500" sizes="(max-width: 500px) 100vw, 500px" src="../files/07-500x500.jpg" width="500">
+									<div class="mask"></div><a href="http://themes.pixelwars.org/empathy/free-your-mind-for-a-better-life/"></a>
+								</div>
+								<header class="media-cell-desc">
+									<span class="date" title="2015"><span class="day">24</span> Jul</span>
+									<h3><a href="http://themes.pixelwars.org/empathy/free-your-mind-for-a-better-life/">Free Your Mind For A Better Life</a></h3>
+								</header>
+							</article>
+							<article class="media-cell post-370 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure tag-coffee tag-morning" id="post-370" style="position: absolute; left: 346px; top: 356px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="10" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="334" sizes="(max-width: 500px) 100vw, 500px" src="../files/10-500x334.jpg" width="500">
+									<div class="mask"></div><a href="http://themes.pixelwars.org/empathy/nothing-like-morning-coffee/"></a>
+								</div>
+								<header class="media-cell-desc">
+									<span class="date" title="2015"><span class="day">24</span> Jul</span>
+									<h3><a href="http://themes.pixelwars.org/empathy/nothing-like-morning-coffee/">Nothing Like a Morning Coffee</a></h3>
+								</header>
+							</article>
+							<article class="media-cell post-367 post type-post status-publish format-standard has-post-thumbnail hentry category-travel tag-open-mind tag-think" id="post-367" style="position: absolute; left: 692px; top: 356px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="05" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="334" sizes="(max-width: 500px) 100vw, 500px" src="../files/05-500x334.jpg" width="500">
+									<div class="mask"></div><a href="http://themes.pixelwars.org/empathy/becoming-a-dragonfly/"></a>
+								</div>
+								<header class="media-cell-desc">
+									<span class="date" title="2015"><span class="day">24</span> Jul</span>
+									<h3><a href="http://themes.pixelwars.org/empathy/becoming-a-dragonfly/">Becoming A Dragonfly</a></h3>
+								</header>
+							</article>
+							<article class="media-cell post-364 post type-post status-publish format-standard has-post-thumbnail hentry category-adventure category-travel tag-sea tag-sport tag-surfing" id="post-364" style="position: absolute; left: 692px; top: 694px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="04" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="334" sizes="(max-width: 500px) 100vw, 500px" src="../files/041-500x334.jpg" width="500">
+									<div class="mask"></div><a href="http://themes.pixelwars.org/empathy/surfing-is-a-lifestyle/"></a>
+								</div>
+								<header class="media-cell-desc">
+									<span class="date" title="2015"><span class="day">24</span> Jul</span>
+									<h3><a href="http://themes.pixelwars.org/empathy/surfing-is-a-lifestyle/">Surfing is a Lifestyle</a></h3>
+								</header>
+							</article>
+							<article class="media-cell post-346 post type-post status-publish format-standard has-post-thumbnail hentry category-travel tag-bike tag-travel tag-trip" id="post-346" style="position: absolute; left: 346px; top: 712px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="Processed with VSCOcam with m4 preset" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="500" sizes="(max-width: 500px) 100vw, 500px" src="../files/06-500x500.jpg" width="500">
+									<div class="mask"></div><a href="http://themes.pixelwars.org/empathy/runaway-a-road-adventure/"></a>
+								</div>
+								<header class="media-cell-desc">
+									<span class="date" title="2015"><span class="day">24</span> Jul</span>
+									<h3><a href="http://themes.pixelwars.org/empathy/runaway-a-road-adventure/">Runaway A Road Adventure</a></h3>
+								</header>
+							</article>
+							<article class="media-cell post-361 post type-post status-publish format-standard has-post-thumbnail hentry category-travel" id="post-361" style="position: absolute; left: 0px; top: 795px; width: 33.2692%;">
+								<div class="media-box">
+									<img alt="Young cowboy is drinking coffee from a paper cup" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="334" sizes="(max-width: 500px) 100vw, 500px" src="../files/02-500x334.jpg" width="500">
+									<div class="mask"></div><a href="http://themes.pixelwars.org/empathy/travelling-feels-like-you-are-alive/"></a>
+								</div>
+								<header class="media-cell-desc">
+									<span class="date" title="2015"><span class="day">24</span> Jul</span>
+									<h3><a href="http://themes.pixelwars.org/empathy/travelling-feels-like-you-are-alive/">Travelling Feels Like You Are Alive</a></h3>
+								</header>
+							</article>
+						</div-->
+						<!--p class="launch"><a class="button" href="http://themes.pixelwars.org/empathy/blog/">SEE ALL POSTS</a></p-->
+					</div>
+				</div>
+			</section>
+			<section class="pt-page page-layout menu-item" id="contact">
+				<div class="layout-medium">
+
+					<h1 class="page-title"><i class="pe-7s-call"></i> Contact Me</h1>
+
+					<article id="post-310" class="hentry post-310 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-design">
+
+						<div class="entry-content">
+							<div>
+								<div class="mini-text project-info">
+									<h1 class="entry-title">Reach Me</h1></br>
+
+									<style>
+									@media (max-width: 768px) {
+										#contact .col-sm-3 {
+											width: 50%;
+											margin-top: 0em;
+											clear: none;
+										}
+
+										#contact .entry-title {
+											text-align: left;
+										}
+
+										#contact .contact-form {
+											max-width: 800px;
+										}
+
+										#contact .contact-form p {
+											margin-top: 1.5em;
+										}
+
+										#contact .project-description {
+											float: left;
+										}
+									}
+
+									@media (min-width: 768px) {
+										#contact .col-sm-3 {
+											width: 100%;
+											margin-top: 1.5em;
+										}
+
+										#contact .entry-title {
+									    text-align: left;
+										}
+
+										#contact .contact-form {
+									    max-width: 800px;
+										}
+
+										#contact .contact-form p {
+									    margin-top: 1.5em;
+										}
+									}
+									</style>
+
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-map-marker"></i></p>
+											<h4>based in Birmingham, UK</h4>
+										</div>
+									</div><br>
+
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-call"></i></p>
+											<h4>Tel : +123 456 78900</h4>
+										</div>
+									</div>
+
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-mail"></i></p>
+											<h4 style="word-wrap: break-word;">ashley.bradley@mail.bcu.ac.uk</h4>
+										</div>
+									</div></br>
+
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-check"></i></p>
+											<h4>Freelance Available</h4>
+										</div>
+									</div>
+								</div></br>
+
+								<div class="mini-text project-description" id="project-description">
+									<h1 class="entry-title">Send Me A Message</h1>
+
+									<div class="contact-form">
+										<form action="http://themes.pixelwars.org/empathy/wp-content/themes/empathy/send-mail.php" id="contact-form" method="post" name="contact-form">
+											<input id="sender_domain" name="sender_domain" type="hidden" value="server@themes.pixelwars.org"><input id="subject" name="subject" type="hidden" value="Contact form message from Empathy">
+											<p><label for="name">NAME</label><input class="required" id="name" name="name" type="text"></p>
+											<p><label for="email">EMAIL</label><input class="required email" id="email" name="email" type="text"></p>
+											<p class="antispam"><label for="url">Leave this empty</label><input id="url" name="url" type="text"></p>
+											<p><label for="message">MESSAGE</label>
+											<textarea class="required" id="message" name="message"></textarea></p>
+											<p><input class="submit button primary" type="submit" value="SEND"></p>
+										</form>
+									</div>
+
+									<h1 class="entry-title">Social Media</h1></br>
+									<ul class="social-intro list-unstyled list-inline">
+									  <li><a href="#" class="icn-facebook"><i class="fa fa-facebook"></i></a></li>
+									  <li><a href="#" class="icn-twitter"><i class="fa fa-twitter"></i></a></li>
+									  <li><a href="#" class="icn-dribbble"><i class="fa fa-dribbble"></i></a></li>
+									  <li><a href="#" class="icn-g-plus"><i class="fa fa-google-plus"></i></a></li>
+									  <li><a href="#" class="icn-linkedin"><i class="fa fa-linkedin"></i></a></li>
+									  <li><a href="#" class="icn-instagram"><i class="fa fa-instagram"></i></a></li>
+									  <li><a href="#" class="icn-vimeo"><i class="fa fa-vimeo-square"></i></a></li>
+									  <li><a href="#" class="icn-youtube"><i class="fa fa-youtube-play"></i></a></li>
+									  <li><a href="#" class="icn-tumblr"><i class="fa fa-tumblr"></i></a></li>
+									  <li><a href="#" class="icn-github"><i class="fa fa-github-alt"></i></a></li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<!--div class="content">
+					<div class="layout-medium">
+						<h1 class="page-title"><i class="pe-7s-call"></i> Contact Me</h1>
+
+						<div class="section-title center">
+							<h2><i>Reach Me</i></h2>
+						</div>
+						<div class="row">
+							<div class="col-sm-3 col-xs-6">
+								<div class="fun-fact">
+									<p><i class="pe-7s-map-marker"></i></p>
+									<h4>based in Birmingham, UK</h4>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-6">
+								<div class="fun-fact">
+									<p><i class="pe-7s-call"></i></p>
+									<h4>Tel : +123 456 78900</h4>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-6">
+								<div class="fun-fact">
+									<p><i class="pe-7s-mail"></i></p>
+									<h4 style="word-wrap: break-word;">ashley.bradley@mail.bcu.ac.uk</h4>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-6">
+								<div class="fun-fact">
+									<p><i class="pe-7s-check"></i></p>
+									<h4>Freelance Available</h4>
+								</div>
+							</div>
+						</div>
+						<div class="section-title center">
+							<h2><i>Drop Me A Line</i></h2>
+						</div>
+						<div class="contact-form">
+							<form action="http://themes.pixelwars.org/empathy/wp-content/themes/empathy/send-mail.php" id="contact-form" method="post" name="contact-form">
+								<input id="sender_domain" name="sender_domain" type="hidden" value="server@themes.pixelwars.org"><input id="subject" name="subject" type="hidden" value="Contact form message from Empathy">
+								<p><label for="name">NAME</label><input class="required" id="name" name="name" type="text"></p>
+								<p><label for="email">EMAIL</label><input class="required email" id="email" name="email" type="text"></p>
+								<p class="antispam"><label for="url">Leave this empty</label><input id="url" name="url" type="text"></p>
+								<p><label for="message">MESSAGE</label>
+								<textarea class="required" id="message" name="message"></textarea></p>
+								<p><input class="submit button primary" type="submit" value="SEND"></p>
+							</form>
+						</div>
+                        <div class="section-title center">
+							<h2><i>Let’s Socialize</i></h2>
+						</div>
+						<ul class="social">
+							<li>
+								<a class="facebook" href="http://themes.pixelwars.org/empathy/#" target="_blank"></a>
+							</li>
+							<li>
+								<a class="twitter" href="http://themes.pixelwars.org/empathy/#" target="_blank"></a>
+							</li>
+							<li>
+								<a class="linkedin" href="http://themes.pixelwars.org/empathy/#" target="_blank"></a>
+							</li>
+							<li>
+								<a class="google-plus" href="http://themes.pixelwars.org/empathy/#" target="_blank"></a>
+							</li>
+							<li>
+								<a class="pinterest" href="http://themes.pixelwars.org/empathy/#" target="_blank"></a>
+							</li>
+							<li>
+								<a class="instagram" href="http://themes.pixelwars.org/empathy/#" target="_blank"></a>
+							</li>
+							<li>
+								<a class="vine" href="http://themes.pixelwars.org/empathy/#" target="_blank"></a>
+							</li>
+							<li>
+								<a class="vimeo" href="http://themes.pixelwars.org/empathy/#" target="_blank"></a>
+							</li>
+						</ul>
+						<!--div class="map">
+							<div class="map-canvas" data-latitude="-25.363882" data-longitude="131.044922" data-marker-image="http://themes.pixelwars.org/empathy/wp-content/uploads/2015/07/marker.png" data-zoom="5" id="map-canvas" style="position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);">
+								<div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;">
+									<div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default;">
+										<div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+											<div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+												<div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+													<div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 730px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 730px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 986px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 986px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1242px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 730px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 474px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 986px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 474px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 730px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 986px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1242px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 474px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1242px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1242px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 474px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 730px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 730px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 986px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 218px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 218px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 986px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1498px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1498px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1242px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 218px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 474px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1242px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1498px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 474px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 218px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1498px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1498px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -38px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1754px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 218px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 218px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1498px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1754px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -38px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1754px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1754px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -38px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -38px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -38px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1754px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -38px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 1754px; top: 1075px;"></div>
+													</div>
+												</div>
+											</div>
+											<div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+											<div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+											<div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+												<div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+													<div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 730px; top: 563px;">
+															<canvas draggable="false" height="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" width="256"></canvas>
+														</div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 730px; top: 307px;">
+															<canvas draggable="false" height="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;" width="256"></canvas>
+														</div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 986px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 986px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1242px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 730px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 474px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 986px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 474px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 730px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 986px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1242px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 474px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1242px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1242px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 474px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 730px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 730px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 986px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 218px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 218px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 986px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1498px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1498px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1242px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 218px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 474px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1242px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1498px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 474px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 218px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1498px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1498px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -38px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1754px; top: 563px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 218px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 218px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1498px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1754px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -38px; top: 307px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1754px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1754px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -38px; top: 819px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -38px; top: 51px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -38px; top: 1075px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1754px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -38px; top: -205px;"></div>
+														<div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 1754px; top: 1075px;"></div>
+													</div>
+												</div>
+											</div>
+											<div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+												<div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;">
+													<div style="transform: translateZ(0px); position: absolute; left: 730px; top: 563px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 730px; top: 307px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(1)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 986px; top: 307px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(2)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 986px; top: 563px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(3)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1242px; top: 307px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(4)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 730px; top: 819px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(5)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 474px; top: 307px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(6)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 986px; top: 51px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(7)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 474px; top: 563px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(8)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 730px; top: 51px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(9)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 986px; top: 819px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(10)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1242px; top: 563px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(11)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 474px; top: 51px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(12)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1242px; top: 819px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(13)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1242px; top: 51px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(14)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 474px; top: 819px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(15)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 730px; top: 1075px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(16)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 730px; top: -205px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(17)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 986px; top: -205px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(18)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 218px; top: 307px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(19)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 218px; top: 563px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(20)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 986px; top: 1075px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(21)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1498px; top: 563px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(22)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1498px; top: 307px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(23)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1242px; top: -205px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(24)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 218px; top: 51px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(25)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 474px; top: 1075px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(26)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1242px; top: 1075px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(27)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1498px; top: 51px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(28)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 474px; top: -205px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(29)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 218px; top: 819px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(30)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1498px; top: 819px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(31)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1498px; top: -205px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(32)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: -38px; top: 563px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(33)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1754px; top: 563px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(34)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 218px; top: -205px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(35)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 218px; top: 1075px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(36)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1498px; top: 1075px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(37)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1754px; top: 307px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(38)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: -38px; top: 307px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(39)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1754px; top: 51px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(40)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1754px; top: 819px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(41)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: -38px; top: 819px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(42)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: -38px; top: 51px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(43)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: -38px; top: 1075px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(44)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1754px; top: -205px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(45)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: -38px; top: -205px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(46)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+													<div style="transform: translateZ(0px); position: absolute; left: 1754px; top: 1075px; transition: opacity 200ms ease-out;"><img alt="" draggable="false" src="../files/vt(47)" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+												</div>
+											</div>
+										</div>
+										<div style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%;"></div>
+										<div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+											<div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+											<div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+											<div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div>
+											<div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+										</div>
+									</div>
+									<div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 746px; top: 558px; background-color: white;">
+										<div style="padding: 0px 0px 10px; font-size: 16px;">
+											Map Data
+										</div>
+										<div style="font-size: 13px;">
+											Map data ©2016 GBRMPA, Google
+										</div>
+										<div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img draggable="false" src="../files/mapcnt6.png" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+									</div>
+									<div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 72px; bottom: 0px; width: 167px;">
+										<div class="gm-style-cc" draggable="false" style="-webkit-user-select: none; height: 14px; line-height: 14px;">
+											<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+												<div style="width: 1px;"></div>
+												<div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+											</div>
+											<div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+												<a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2016 GBRMPA, Google</span>
+											</div>
+										</div>
+									</div>
+									<div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+										<div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
+											Map data ©2016 GBRMPA, Google
+										</div>
+									</div>
+									<div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+										<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+											<div style="width: 1px;"></div>
+											<div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+										</div>
+										<div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+											<a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);" target="_blank">Terms of Use</a>
+										</div>
+									</div>
+									<div style="width: 25px; height: 25px; margin-top: 10px; overflow: hidden; display: none; margin-right: 14px; position: absolute; top: 0px; right: 0px;"><img class="gm-fullscreen-control" draggable="false" src="../files/sv5.png" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 112px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div>
+									<div class="gm-style-cc" draggable="false" style="-webkit-user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;">
+										<div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+											<div style="width: 1px;"></div>
+											<div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+										</div>
+										<div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+											<a href="https://www.google.com/maps/@-25.363882,131.044922,5z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;" target="_new" title="Report errors in the road map or imagery to Google">Report a map error</a>
+										</div>
+									</div>
+									<div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+										<a href="https://maps.google.com/maps?ll=-25.363882,131.044922&amp;z=5&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" style="position: static; overflow: visible; float: none; display: inline;" target="_blank" title="Click to see this area on Google Maps">
+										<div style="width: 66px; height: 26px; cursor: pointer;"><img draggable="false" src="../files/google4.png" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a>
+									</div>
+								</div>
+							</div>
+						</div-->
+					<!-- </div>
+				</div> -->
+			</section>
+		</div>
+	</div>
+
+	<!-- PORTFOLIO SINGLE AJAX CONTENT CONTAINER -->
+	<div class="p-overlay"></div>
+	<div class="p-overlay"></div><!-- ALERT: used for contact form mail delivery alert -->
+	<div class="site-alert animated"></div>
+	<script src="../files/jquery.address-1.5.min.js" type="text/javascript"></script>
+	<script src="../files/smoothscroll.js" type="text/javascript"></script>
+	<script src="../files/nprogress.js" type="text/javascript"></script>
+	<script src="../files/fastclick.js" type="text/javascript"></script>
+	<script src="../files/typist.js" type="text/javascript"></script>
+	<script src="../files/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+	<script src="../files/jquery.isotope.min.js" type="text/javascript"></script>
+	<script src="../files/jquery.fitvids.js" type="text/javascript"></script>
+	<script src="../files/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="../files/jquery.uniform.min.js" type="text/javascript"></script>
+	<script src="../files/jquery.magnific-popup.min.js" type="text/javascript"></script>
+	<script src="../files/socialstream.jquery.js" type="text/javascript"></script>
+	<script src="../files/js" type="text/javascript"></script>
+	<script src="../files/main.js" type="text/javascript"></script>
+	<script src="../files/wp-fix.js" type="text/javascript"></script>
+	<script src="../files/wp-embed.min.js" type="text/javascript"></script>
+
+	<script charset="UTF-8" src="../files/common.js" type="text/javascript"></script>
+	<script charset="UTF-8" src="../files/map.js" type="text/javascript"></script>
+	<script charset="UTF-8" src="../files/util.js" type="text/javascript"></script>
+	<script charset="UTF-8" src="../files/marker.js" type="text/javascript"></script>
+	<script charset="UTF-8" src="../files/onion.js" type="text/javascript"></script>
+	<script charset="UTF-8" src="../files/stats.js" type="text/javascript"></script>
+	<script charset="UTF-8" src="../files/controls.js" type="text/javascript"></script>
+
+	<style type="text/css">
+	   /*.section-title h2:after, .section-title h2:before { background-color: #75ad6f; }*/
+	</style>
+</body>
+</html>
