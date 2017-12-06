@@ -58,6 +58,18 @@
 	animation: fade .7s ease both;
 }
 
+.pt-page-fade-in {
+	-webkit-animation: fadein .7s ease both;
+	-moz-animation: fadein .7s ease both;
+	animation: fadein .7s ease both;
+}
+
+.pt-page-fade-out {
+	-webkit-animation: fadeout .7s ease both;
+	-moz-animation: fadeout .7s ease both;
+	animation: fadeout .7s ease both;
+}
+
 /* move from / to and fade */
 
 .pt-page-moveToLeftFade {
@@ -155,13 +167,13 @@
 	from { transform: translateX(-100%); }
 }
 
-@-webkit-keyframes moveToRight { 
+@-webkit-keyframes moveToRight {
 	to { -webkit-transform: translateX(100%); }
 }
-@-moz-keyframes moveToRight { 
+@-moz-keyframes moveToRight {
 	to { -moz-transform: translateX(100%); }
 }
-@keyframes moveToRight { 
+@keyframes moveToRight {
 	to { transform: translateX(100%); }
 }
 
@@ -225,6 +237,36 @@
 }
 @keyframes fade {
 	to { opacity: 0.3; }
+}
+
+/* fadein */
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* fadeout */
+
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
 }
 
 /* move from / to and fade */

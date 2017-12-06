@@ -769,7 +769,8 @@ html {
 	padding-top: 50px;
 	left: 0;
 	right: 0;
-	overflow: auto;
+	/*overflow: auto;*/
+  overflow: unset;
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -887,7 +888,7 @@ html {
 
 .header,
 .header-wrap {
-	background: #1c262b;
+	background: none;
 }
 
 .site-title {
@@ -1177,6 +1178,10 @@ body {
 	bottom: 0;
 	left: 0;
 	background: rgba(73, 92, 95, 0.75);
+  /* background: -webkit-linear-gradient(to right, rgba(142, 68, 173, 0.7), rgba(192, 57, 43, .7));  /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, rgba(142, 68, 173, 0.7), rgba(192, 57, 43, .7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, rgba(225, 0, 255, 0.6), rgba(127, 0, 255, 0.6));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(225, 0, 255, 0.7), rgba(127, 0, 255, 0.7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .home-section h2,
@@ -1200,42 +1205,42 @@ body {
  	background-color: rgba(68, 68, 68, 0.4);
  }
 
- /* PAGE BACKGROUNDS */
- .one-page-layout .site-main>section:nth-of-type(1) {
- 	background-color: #2E2F2D;
- }
+  /* PAGE BACKGROUNDS */
+  .one-page-layout .site-main>section:nth-of-type(1) {
+    background-color: #2E2F2D;
+  }
 
- .one-page-layout .site-main>section:nth-of-type(2) {
- 	background-color: #fafafa;
- }
+  .one-page-layout .site-main>section:nth-of-type(2) {
+    background-color: #fafafa;
+  }
 
- .one-page-layout .site-main>section:nth-of-type(3) {
- 	background-color: #fafafa;
- }
+  .one-page-layout .site-main>section:nth-of-type(3) {
+    background-color: #fafafa;
+  }
 
- .one-page-layout .site-main>section:nth-of-type(4) {
- 	background-color: #fafafa;
- }
+  .one-page-layout .site-main>section:nth-of-type(4) {
+    background-color: #fafafa;
+  }
 
- .one-page-layout .site-main>section:nth-of-type(5) {
- 	background-color: #fafafa;
- }
+  .one-page-layout .site-main>section:nth-of-type(5) {
+    background-color: #fafafa;
+  }
 
- .one-page-layout .site-main>section:nth-of-type(6) {
- 	background-color: #fafafa;
- }
+  .one-page-layout .site-main>section:nth-of-type(6) {
+    background-color: #fafafa;
+  }
 
- .one-page-layout .site-main>section:nth-of-type(7) {
-   background-color: #fafafa;
- }
+  .one-page-layout .site-main>section:nth-of-type(7) {
+    background-color: #fafafa;
+  }
 
- .one-page-layout .site-main>section:nth-of-type(8) {
-   background-color: #fafafa;
- }
+  .one-page-layout .site-main>section:nth-of-type(8) {
+    /*background: rgba(73, 92, 95, 1);*/
+  }
 
- .one-page-layout .site-main>section:nth-of-type(9) {
-   background-color: #fafafa;
- }
+  .one-page-layout .site-main>section:nth-of-type(9) {
+    background-color: #fafafa;
+  }
 
  /* LIGHT TEXT ON PAGES */
 
@@ -1313,7 +1318,7 @@ body {
  .page-title {
  	margin: 0;
   padding: 0;
-  margin-bottom: 1.3em;
+  margin: 1em 0;
  	text-align: center;
  }
 
@@ -4503,6 +4508,7 @@ body {
  .one-page-layout .portfolio-nav a.back {
  	display: inline-block;
  }
+
  /*  --------------------------------------------
 
 	6. THEME - customize colors etc...
@@ -4522,8 +4528,8 @@ body {
  a:hover {
  	color: #8ACB82;
  }
- /* Text Selection */
 
+ /* Text Selection */
  ::selection {
  	text-shadow: none;
  	color: #333;
@@ -4535,14 +4541,14 @@ body {
  	color: #333;
  	background: #FFFFCF;
  }
+
  /* HEADER */
-
- .header,
+ /*.header,
  .header-wrap {
- 	background: #1c262b;
- }
- /* SITE TITLE */
+ 	background: #fff;
+ }*/
 
+ /* SITE TITLE */
  .site-title {
  	color: #fff;
  }
@@ -4552,6 +4558,7 @@ body {
  		background: #2BA163;
  	}
  }
+
  /* PRIMARY COLOR : #8ACB82
    ================================================== */
  /* PRIMARY COLOR : #8ACB82 */
@@ -4718,5 +4725,6 @@ a.icn-github {
 }
 
 .my-work-mobile {
-	display: block;
+  display: table;
+  margin: auto;
 }
